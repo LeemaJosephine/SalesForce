@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="57430" started-at="2023-05-17T13:00:37 IST" finished-at="2023-05-17T13:01:34 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="57430" started-at="2023-05-17T13:00:37 IST" finished-at="2023-05-17T13:01:34 IST">
+      <class name="testcases.TC005_VerifyIndividualssortorderbyName">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC005_VerifyIndividualssortorderbyName@2e3fc542]" name="setup" is-config="true" duration-ms="1" started-at="2023-05-17T13:00:37 IST" finished-at="2023-05-17T13:00:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:testcases.TC005_VerifyIndividualssortorderbyName@2e3fc542]" name="testDetails" is-config="true" duration-ms="13" started-at="2023-05-17T13:00:37 IST" finished-at="2023-05-17T13:00:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC005_VerifyIndividualssortorderbyName@2e3fc542]" name="launchBrowser" is-config="true" duration-ms="33934" started-at="2023-05-17T13:00:37 IST" finished-at="2023-05-17T13:01:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://login.salesforce.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[leemajosephine@testleaf.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Leema.2218]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifySort()[pri:0, instance:testcases.TC005_VerifyIndividualssortorderbyName@2e3fc542]" name="verifySort" duration-ms="18587" started-at="2023-05-17T13:01:11 IST" finished-at="2023-05-17T13:01:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySort -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC005_VerifyIndividualssortorderbyName@2e3fc542]" name="closeBrowser" is-config="true" duration-ms="1278" started-at="2023-05-17T13:01:29 IST" finished-at="2023-05-17T13:01:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC005_VerifyIndividualssortorderbyName -->
+      <class name="testcases.TC004_CreateIndividualswithoutmandatoryfields">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:testcases.TC004_CreateIndividualswithoutmandatoryfields@782663d3]" name="startReport" is-config="true" duration-ms="228" started-at="2023-05-17T13:00:36 IST" finished-at="2023-05-17T13:00:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:testcases.TC004_CreateIndividualswithoutmandatoryfields@782663d3]" name="setup" is-config="true" duration-ms="0" started-at="2023-05-17T13:00:37 IST" finished-at="2023-05-17T13:00:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testDetails()[pri:0, instance:testcases.TC004_CreateIndividualswithoutmandatoryfields@782663d3]" name="testDetails" is-config="true" duration-ms="13" started-at="2023-05-17T13:00:37 IST" finished-at="2023-05-17T13:00:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDetails -->
+        <test-method status="PASS" signature="launchBrowser(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.TC004_CreateIndividualswithoutmandatoryfields@782663d3]" name="launchBrowser" is-config="true" duration-ms="28899" started-at="2023-05-17T13:00:39 IST" finished-at="2023-05-17T13:01:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://login.salesforce.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[leemajosephine@testleaf.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Leema.2218]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="createIndividualswithoutmandatoryfields(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC004_CreateIndividualswithoutmandatoryfields@782663d3]" name="createIndividualswithoutmandatoryfields" duration-ms="25469" started-at="2023-05-17T13:01:08 IST" data-provider="ReadExcel" finished-at="2023-05-17T13:01:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ganesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kumar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createIndividualswithoutmandatoryfields -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testcases.TC004_CreateIndividualswithoutmandatoryfields@782663d3]" name="closeBrowser" is-config="true" duration-ms="850" started-at="2023-05-17T13:01:33 IST" finished-at="2023-05-17T13:01:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:testcases.TC004_CreateIndividualswithoutmandatoryfields@782663d3]" name="endReport" is-config="true" duration-ms="664" started-at="2023-05-17T13:01:34 IST" finished-at="2023-05-17T13:01:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- testcases.TC004_CreateIndividualswithoutmandatoryfields -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

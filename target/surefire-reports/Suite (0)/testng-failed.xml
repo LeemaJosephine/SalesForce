@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite (0)]" parallel="classes">
+  <parameter name="password" value="Leema.2218"/>
+  <parameter name="url" value="https://login.salesforce.com"/>
+  <parameter name="username" value="leemajosephine@testleaf.com"/>
+  <test thread-count="5" verbose="0" name="Test(failed)" parallel="classes">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="testcases.TC005_VerifyIndividualssortorderbyName">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="verifySort"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="testDetails"/>
+        </methods>
+      </class> <!-- testcases.TC005_VerifyIndividualssortorderbyName -->
+      <class name="testcases.TC004_CreateIndividualswithoutmandatoryfields">
+        <methods>
+          <include name="createIndividualswithoutmandatoryfields"/>
+          <include name="launchBrowser"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+          <include name="testDetails"/>
+        </methods>
+      </class> <!-- testcases.TC004_CreateIndividualswithoutmandatoryfields -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite (0)] -->
