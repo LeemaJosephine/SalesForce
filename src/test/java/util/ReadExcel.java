@@ -11,7 +11,7 @@ public class ReadExcel {
 
 	public static String[][] readExcelSheet(String excelfile) throws IOException {
 		
-		XSSFWorkbook book=new XSSFWorkbook("./data/"+excelfile+".xlsx");
+		XSSFWorkbook book=new XSSFWorkbook("./data/"+excelfile+".xlsx");  // open work book
 		XSSFSheet sheet = book.getSheetAt(0);
 		int rowcount = sheet.getLastRowNum(); //2
 		short columnCount = sheet.getRow(0).getLastCellNum(); //2

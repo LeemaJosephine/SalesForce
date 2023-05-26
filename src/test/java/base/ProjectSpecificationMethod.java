@@ -2,6 +2,8 @@ package base;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
@@ -72,7 +74,7 @@ public class ProjectSpecificationMethod {
 	}
 	@Parameters({"browser","url","username","password"})
 	@BeforeMethod
-	public void launchBrowser(String browser, String url, String username, String password) {
+	public void launchBrowser(String browser, String url, String username, String password) throws IOException {
 		
 		if(browser.equalsIgnoreCase("Chrome")) {
 		WebDriverManager.chromedriver().setup();
@@ -89,6 +91,23 @@ public class ProjectSpecificationMethod {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
+		try {
+			HttpURLConnection httpConnection = (HttpURLConnection) new URL(url).openConnection();
+			httpConnection.connect();
+			int respCode = httpConnection.getResponseCode();
+
+			if (respCode >= 400) {
+				System.out.println(url + " is broken and its responsecode is " + respCode);
+				reportStep("PASS", "This " + url + " is broken");
+			} else {
+				System.out.println(url + " is Valid and its responsecode is " + respCode);
+				reportStep("PASS", "This " + url + " is verified valid link");
+			}
+		} catch (Exception ex) {
+			reportStep("FAIL", "Problem while Verifing the " + url + " as broken link");
+			ex.printStackTrace();
+		}
+		
 		//1. Login to https://login.salesforce.com
 		driver.findElement(By.id("username")).sendKeys(username);
 		driver.findElement(By.id("password")).sendKeys(password);
@@ -102,7 +121,7 @@ public class ProjectSpecificationMethod {
 	
 	@DataProvider(name="ReadExcel")
 	public String[][] getData() throws IOException {
-		String [][] readData=ReadExcel.readExcelSheet(excelfile);
+		String[][] readData = ReadExcel.readExcelSheet(excelfile);
 		return readData;
 	}
 	

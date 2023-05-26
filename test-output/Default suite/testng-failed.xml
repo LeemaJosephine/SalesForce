@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC002_EditIndividuals">
+      <class name="testcases.TC001_CreateIndividuals">
         <methods>
           <include name="launchBrowser"/>
-          <include name="editIndivuduals"/>
+          <include name="setup"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="CreateIndividuals"/>
           <include name="closeBrowser"/>
+          <include name="testDetails"/>
         </methods>
-      </class> <!-- testcases.TC002_EditIndividuals -->
+      </class> <!-- testcases.TC001_CreateIndividuals -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

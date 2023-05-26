@@ -5,7 +5,7 @@
   <parameter name="url" value="https://login.salesforce.com"/>
   <parameter name="username" value="leemajosephine@testleaf.com"/>
   <test thread-count="5" verbose="2" name="EdgeTest(failed)" parallel="tests">
-    <parameter name="browser" value="Edge"/>
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="testcases.TC001_CreateIndividuals">
         <methods>
@@ -13,7 +13,7 @@
           <include name="setup"/>
           <include name="startReport"/>
           <include name="endReport"/>
-          <include name="CreateIndividuals"/>
+          <include name="CreateIndividuals" invocation-numbers="0"/>
           <include name="closeBrowser"/>
           <include name="testDetails"/>
         </methods>

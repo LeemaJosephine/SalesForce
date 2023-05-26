@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <parameter name="password" value="Leema.2218"/>
   <parameter name="url" value="https://login.salesforce.com"/>
   <parameter name="username" value="leemajosephine@testleaf.com"/>
-  <test thread-count="5" verbose="0" name="EdgeTest(failed)" parallel="tests">
+  <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testcases.TC001_CreateIndividuals">
+      <class name="testcases.TC004_CreateIndividualswithoutmandatoryfields">
         <methods>
+          <include name="createIndividualswithoutmandatoryfields" invocation-numbers="0"/>
           <include name="launchBrowser"/>
-          <include name="setup"/>
           <include name="startReport"/>
           <include name="endReport"/>
-          <include name="CreateIndividuals" invocation-numbers="0"/>
+          <include name="setup"/>
           <include name="closeBrowser"/>
           <include name="testDetails"/>
         </methods>
-      </class> <!-- testcases.TC001_CreateIndividuals -->
+      </class> <!-- testcases.TC004_CreateIndividualswithoutmandatoryfields -->
     </classes>
-  </test> <!-- EdgeTest(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
