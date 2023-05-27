@@ -39,7 +39,7 @@ public class ProjectSpecificationMethod {
 	
 	@BeforeSuite
 	public void startReport() {
-		ExtentHtmlReporter reporter = new ExtentHtmlReporter("./reports/result.html");		
+		ExtentHtmlReporter reporter = new ExtentHtmlReporter("./reports/result.html");
 		reporter.setAppendExisting(false);
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
